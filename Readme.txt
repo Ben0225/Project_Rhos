@@ -27,6 +27,8 @@ En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'er
 'g' : Cela correspond généralement à la somme des valeurs dans les colonnes e et f; on pourrait se positionner en disant qu'il s'agit de la fortune.
 
 
-A l'issu de l'excécution du fichier 
+A l'issu de l'excécution du fichier find_top_3_richest.py, on a des blocs de traitement de lignes spécifiques qui renvoie les trois personnes riches de chaque bloc (dans notre cas, nous avions choisi 10 000 000 lignes).
+
+Enfin, on se retrouve avec moins de personnes ce qui nous permet de dire que les trois personnes les plus riches sont : 
 
 
