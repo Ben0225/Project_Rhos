@@ -27,7 +27,7 @@ En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'er
 'g' : Cela correspond généralement à la somme des valeurs dans les colonnes e et f; on pourrait se positionner en disant qu'il s'agit de la fortune.
 
 
-A l'issu de l'excécution du fichier find_top_3_richest.py, on a un traitement de lignes spécifiques qui renvoie les trois personnes riches(Temps d'exécution plus ou moins long selon les capacités). Il est aussi possible de traiter les données par blocs afin d'éviter d'utiliser toute la mémoire ram.
+A l'issu de l'excécution du fichier find_top_3_richest.py, on a un traitement de lignes spécifiques qui renvoie les trois personnes les plus riches(Temps d'exécution plus ou moins long selon les capacités des serveurs). Il est aussi possible de traiter les données par blocs afin d'éviter d'utiliser toute la mémoire ram.
 
 Enfin, on a en sortie les personnes les plus riches avec la somme de la colonne 'g' qu'on a considéré; ce qui nous permet de dire que les trois personnes les plus riches sont : [('Zoé Walliand', 893338574.0), ('Gerard Parmentier', 891964976.0), ('Océane Urbain', 891870971.0)].
 
