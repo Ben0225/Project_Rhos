@@ -12,8 +12,8 @@ Utilisez des outils de la bibliothèque standard de Python, comme csv, pour anal
 
 
 Résultats
-Le code rhos : Ce code est conçu pour vérifier si un fichier spécifié existe, puis lire et afficher les premières lignes de ce fichier CSV. 
-Il affiche un maximum de 100 lignes pour éviter une surcharge d'affichage si le fichier est très grand. 
+data.py : Ce code est conçu pour vérifier si un fichier spécifié existe, puis lire et afficher les premières lignes de ce fichier CSV. 
+Il affiche un maximum de 100 lignes (au choix) pour éviter une surcharge d'affichage si le fichier est très grand. 
 En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'erreur est affiché.
 
 *Les colonnes sont au nombre de  7: 'a' , 'b' ,'c' , 'd' , 'e' , 'f', 'g'
@@ -25,5 +25,8 @@ En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'er
 'e' : Montant associé à chaque enregistrement,peut être une sorte de valeur monétaire ou de score.
 'f' : Une autre mesure ou valeur associée, qui semble souvent être zéro mais parfois négatif. On pourrait penser à des dettes.
 'g' : Cela correspond généralement à la somme des valeurs dans les colonnes e et f; on pourrait se positionner en disant qu'il s'agit de la fortune.
+
+
+A l'issu de l'excécution du fichier 
 
 
