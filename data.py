@@ -16,7 +16,7 @@ try:
     with open(path, mode="r", encoding="utf-8") as file:
         reader = csv.reader(file) #Crée un objet lecteur CSV qui itère sur les lignes du fichier
         count = 0
-        max_lines = 100  # Définissez le nombre maximum de lignes à afficher
+        max_lines = 100  # le nombre maximum de lignes à afficher
         for row in reader:
             print(row)
             count += 1
