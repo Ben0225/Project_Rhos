@@ -3,7 +3,7 @@ Interpréter les Instructions :
 Il est démandé de : 
 
 *Expliquer chaque colonne : Analyser ce que chaque colonne représente en fonction des données disponibles et des descriptions.
-*Trouver les 3 personnes les plus riches : Identifiez la colonne représentant la richesse (probablement une colonne avec des valeurs numériques) et trouvez les trois valeurs les plus élevées.
+*Trouver les 3 personnes les plus riches : Identifier la colonne représentant la richesse (probablement une colonne avec des valeurs numériques) et trouver les trois valeurs les plus élevées.
 
 *Manipulation des Données :
 
@@ -27,8 +27,8 @@ En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'er
 'g' : Cela correspond généralement à la somme des valeurs dans les colonnes e et f; on pourrait se positionner en disant qu'il s'agit de la fortune.
 
 
-A l'issu de l'excécution du fichier find_top_3_richest.py, on a des blocs de traitement de lignes spécifiques qui renvoie les trois personnes riches de chaque bloc (dans notre cas, nous avions choisi 10 000 000 lignes).
+A l'issu de l'excécution du fichier find_top_3_richest.py, on a un traitement de lignes spécifiques qui renvoie les trois personnes riches(Temps d'exécution plus ou moins long selon les capacités). Il est aussi possible de traiter les données par blocs afin d'éviter d'utiliser toute la mémoire ram.
 
-Enfin, on se retrouve avec moins de personnes ce qui nous permet de dire que les trois personnes les plus riches sont : 
+Enfin, on a en sortie les personnes les plus riches avec la somme de la colonne 'g' qu'on a considéré; ce qui nous permet de dire que les trois personnes les plus riches sont : [('Zoé Walliand', 893338574.0), ('Gerard Parmentier', 891964976.0), ('Océane Urbain', 891870971.0)].
 
 
