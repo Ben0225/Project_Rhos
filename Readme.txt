@@ -1,33 +1,40 @@
-## Interpréter les Instructions :
+# **Interprétation des Instructions**
 
-Il est démandé de : 
+Il est demandé de réaliser les tâches suivantes :
 
-*Expliquer chaque colonne : Analyser ce que chaque colonne représente en fonction des données disponibles et des descriptions.
-*Trouver les 3 personnes les plus riches : Identifier la colonne représentant la richesse (probablement une colonne avec des valeurs numériques) et trouver les trois valeurs les plus élevées.
+- **Expliquer chaque colonne :** Analyser ce que chaque colonne représente en fonction des données disponibles et des descriptions.
+- **Trouver les 3 personnes les plus riches :** Identifier la colonne représentant la richesse (probablement une colonne avec des valeurs numériques) et trouver les trois valeurs les plus élevées.
 
-## Manipulation des Données :
+## **Manipulation des Données**
 
-Utilisez des outils de la bibliothèque standard de Python, comme csv, pour analyser les données. On pourra lire le fichier ligne par ligne et extraire les informations nécessaires.
+Pour manipuler les données, utilisez des outils de la bibliothèque standard de Python, tels que `csv`, pour analyser le fichier. Vous pouvez lire le fichier ligne par ligne et extraire les informations nécessaires pour l'analyse.
 
+## **Résultats**
 
+### **`data.py`**
 
-## Résultats
-data.py : Ce code est conçu pour vérifier si un fichier spécifié existe, puis lire et afficher les premières lignes de ce fichier CSV. 
-Il affiche un maximum de 100 lignes (au choix) pour éviter une surcharge d'affichage si le fichier est très grand. 
-En cas d'erreur lors de l'ouverture ou de la lecture du fichier, un message d'erreur est affiché.
+Ce script est conçu pour :
 
-* Les colonnes sont au nombre de  7: 'a' , 'b' ,'c' , 'd' , 'e' , 'f', 'g'
+1. **Vérification de l'existence du fichier :** Le code vérifie si un fichier spécifié est présent dans le répertoire.
+2. **Lecture et Affichage des Données :** Une fois le fichier trouvé, le script lit les premières lignes du fichier CSV et les affiche. Par défaut, il affiche un maximum de 100 lignes pour éviter une surcharge d'affichage dans le cas où le fichier est volumineux.
+3. **Gestion des Erreurs :** En cas d'échec lors de l'ouverture ou de la lecture du fichier, un message d'erreur est affiché pour informer l'utilisateur.
 
-'a' : Un identifiant ou un index pour chaque enregistrement qui démarre de 0 et augmente de 1 pour chaque ligne.
-'b' : Une description textuelle associée à chaque enregistrement. Ces descriptions semblent être des chaînes comme "longue description 0", "longue description 1", etc.
-'c' : Prénom de la personne
-'d' : Nom de famille
-'e' : Montant associé à chaque enregistrement,peut être une sorte de valeur monétaire ou de score.
-'f' : Une autre mesure ou valeur associée, qui semble souvent être zéro mais parfois négatif. On pourrait penser à des dettes.
-'g' : Cela correspond généralement à la somme des valeurs dans les colonnes e et f; on pourrait se positionner en disant qu'il s'agit de la fortune.
+### **Description des Colonnes**
 
+Les données sont structurées en 7 colonnes, chacune représentant une information spécifique :
 
-A l'issu de l'excécution du fichier find_top_3_richest.py, on a un traitement de lignes spécifiques qui renvoie les trois personnes les plus riches(Temps d'exécution plus ou moins long selon les capacités des serveurs). Il est aussi possible de traiter les données par blocs afin d'éviter d'utiliser toute la mémoire ram.
+- **`a` :** Un identifiant ou index pour chaque enregistrement, démarrant à 0 et augmentant de 1 pour chaque ligne.
+- **`b` :** Une description textuelle associée à chaque enregistrement, souvent sous forme de chaînes comme "longue description 0", "longue description 1", etc.
+- **`c` :** Prénom de la personne.
+- **`d` :** Nom de famille.
+- **`e` :** Un montant associé à chaque enregistrement, qui pourrait représenter une valeur monétaire ou un score.
+- **`f` :** Une autre mesure ou valeur associée, souvent égale à zéro mais parfois négative, suggérant qu’il pourrait s’agir de dettes.
+- **`g` :** Ce champ semble correspondre à la somme des valeurs des colonnes `e` et `f`. On pourrait l'interpréter comme représentant la fortune nette.
+
+### **`find_top_3_richest.py`**
+
+Ce script traite les données pour identifier les trois personnes les plus riches en fonction de la colonne `g`. Le traitement peut prendre un temps plus ou moins long en fonction des capacités des serveurs. Il est également possible de traiter les données par blocs pour éviter de surcharger la mémoire RAM.
+
 
 Enfin, on a en sortie les personnes les plus riches avec la somme de la colonne 'g' qu'on a considéré; ce qui nous permet de dire que les trois personnes les plus riches sont : [('Zoé Walliand', 893338574.0), ('Gerard Parmentier', 891964976.0), ('Océane Urbain', 891870971.0)].
 
